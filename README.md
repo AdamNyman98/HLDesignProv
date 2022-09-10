@@ -11,7 +11,7 @@ Båda serverna är baserade på node och kräver därmed node.js för att starta
 
 ## Starta den faktiska servern
 Processen för att starta denna server är egentligen identisk till den andra, viktigt att nämna dock är att ett nytt command-fönster måste öppnas (eller på annat sätt köras parallellt) så att båda servrar kan öppnas. Följ sedan följande steg: 
-- navigera till mappen "HLDesignProxy" 
+- navigera till mappen "HLDesign" 
 - skriv in kommandot "npm install"
 - skriv sedan "npm run start" 
 - det borde nu stå att servern är öppen på port 1234

@@ -1,0 +1,276 @@
+// adding font family to page 
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+// color variables
+:root {
+  --light: #ffffff;
+  --lightGrey: #F2F2F2;
+  --darkGrey: #4F4F4F;
+  --dark: #50297E;
+}
+
+// Header and slideshow
+.header{
+  color: var(--light);
+  position: relative;
+}
+
+.header a{
+  color: var(--light);
+}
+
+.header a:hover{
+  color: var(--dark)
+}
+
+.top-left{
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  font-size: x-large;
+}
+
+.top-right{
+  position: absolute;
+  top: 25px;
+  right: 50px;
+}
+
+#subheaders p{
+  font-weight: 300;
+  margin:20px;
+  margin-left:10px;
+  font-size: medium;
+  display: inline-block;
+}
+
+#buttons .btn{
+  height: 40px; 
+  width: 125px;
+}
+
+#buttons {
+  position: absolute;
+  top: 63%;
+  left: 19%;
+}
+
+#buybtn{
+  color: var(--dark);
+}
+
+#radiobuttons {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+}
+
+#radiobuttons .radio{
+  margin: 0px;
+  appearance: none;
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--light);
+  border-radius: 50%;
+}
+
+#radiobuttons .radio:checked{
+  background-color: var(--light);
+}
+
+.line{
+  opacity: 1;
+  display: inline-block;
+  margin: 0px;
+  border-top: 1px solid var(--light);
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 768px){
+  .top-left{
+    top: 5%;
+    left: 20%;
+    font-size: x-large;
+  }
+  
+  .top-right{
+    top: 10%;
+    left: 20%
+  }
+
+  #buttons .btn{
+    height: 20px; 
+    width: 60px;
+    font-size: xx-small;
+    padding: 0px;
+  }  
+}
+
+@media (max-width: 460px){
+  #radiobuttons {
+  top: 80%;
+  left: 40%;
+  }
+}
+
+// Search and products 
+
+#searchfield {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding-left:20px;
+  color: #82878A;
+  font-size: small;
+  height: 40px;
+  border: 2px solid var(--lightGrey);
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+#searchbtn{
+  height: 40px;
+  border: 2px solid var(--lightGrey);
+  border-radius: 0 5px 5px 0;
+  border-left:none;
+}
+
+#searchbtn img{
+  width: 30px;
+}
+
+#searchbtn:hover{
+  background-color: white;
+  border: 2px solid var(--darkGrey);
+  border-radius: 0 5px 5px 0;
+}
+
+#searchbtn:focus{
+  background-color: white;
+}
+
+#seachbtn img{
+    border-radius: 50%;
+}
+
+#productList{
+  margin-top: 100px;
+  margin-bottom:100px;
+}
+
+#productRow {
+  margin-left:20%;
+  width:60%;
+}
+
+.product {
+  margin: 10px;
+  height: 300px;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid var(--lightGrey);
+}
+
+.product-text{
+  font-size: small;
+  position:absolute;
+  left: 10px;
+  bottom: 45px;
+  text-transform: uppercase;
+  color: var(--darkGrey);
+}
+
+@media (max-width: 1100px){
+  .product{
+    height:200px;
+  }
+}
+
+@media (max-width: 768px){
+  .product{
+    height:400px;
+  }
+}
+
+@media (max-width: 560px){
+  .product{
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px){
+  .product{
+    height: 220px;
+  }
+}
+
+
+// Banners 
+
+#bannerList{
+  margin-top: 60px;
+  margin-bottom:40px;
+}
+
+#bannerRow .col-md-6 {
+  margin: 0px;
+  padding:0px;
+}
+
+#bannerRow {
+  margin-left:20%;
+  width:60%;
+}
+
+.banner{
+  position: relative;
+}
+
+.banner-text{
+  font-size: small;
+  color: var(--light);
+  position: absolute;
+  bottom: 50px;
+  left: 16px;
+  max-width: 50%;
+}
+
+.banner-text h3{
+  font-size: small;
+  color: var(--light);
+  text-decoration: underline;
+}
+
+.banner-text h1 {
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.banner-text p{
+  font-weight: 400;
+  color: #888687;
+  text-decoration: none;
+}
+
+@media (max-width: 990px){
+  .banner-text{
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 450px){
+  .banner-text h1{
+    font-size: large;
+  }
+  .banner-text{
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 340px){
+  .banner-text h3{
+    display: none;
+  }
+}

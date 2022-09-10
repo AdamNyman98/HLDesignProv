@@ -1,0 +1,19 @@
+{
+  "name": "hldesign",
+  "version": "1.0.0",
+  "description": "This is a project to test applicants that are applying for working at HLDesign.",
+  "source": "./index.html",
+  "scripts": {
+    "build": "parcel build",
+    "start": "parcel"
+  },
+  "author": "Adam Nyman",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}

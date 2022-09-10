@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+  <meta charset="utf-8">
+  <title>Page</title>
+  <!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
+  <link rel="stylesheet" href="./css/style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+  </head>
+
+  <body> 
+    <!-- Header and slideshow -->
+    <div class="container-fluid" id="slideShow">
+      <header class="header">
+        <img src="./image/img_slide1.jpg" class="img-fluid" alt="Picture of nike shoe" id="slideImg">
+        <a href='http://localhost:1234/'><h1 class="top-left">SPORTSHOES.COM</h1></a>
+        <div class="top-right" id="subheaders">
+          <a href='http://localhost:1234/'><p>MEN</p></a>
+          <a href='http://localhost:1234/'><p>WOMEN</p></a>
+        </div>
+        <div id="buttons">
+          <button type="button" class="btn btn-light" id="buybtn">BUY NOW</button>
+          <button type="button" class="btn btn-outline-light" id="learnbtn">LEARN MORE</button>
+        </div>
+        <div id="radiobuttons">
+          <input class="radio" type="radio" id="slide1" name="slide" checked="checked"> 
+          <hr class="line" id="leftline">
+          <input class="radio" type="radio" id="slide2" name="slide"> 
+          <hr class="line" id="rightline">
+          <input class="radio" type="radio" id="slide3" name="slide"> 
+        </div>
+      </header>
+    </div>
+
+    <!-- Searching -->
+    <div class="container-fluid" id="productList"> 
+      <div class="row" id="productRow">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search product..." aria-label="SearchTerm" aria-describedby="basic-addon2" id="searchfield">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="searchbtn">
+              <img src="./image/search_icon.jpg"  class="img-fluid" alt="Search button">
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- products -->
+      <div class="row" id="productRow">
+        <div class="col-sm-12 col-md-4" id="productCol1"></div>
+        <div class="col-sm-12 col-md-4" id="productCol2"></div>
+        <div class="col-sm-12 col-md-4" id="productCol3"></div>
+      </div>
+    </div> 
+
+    <!-- Banners -->
+    <div class="container-fluid" id="bannerList">
+      <div class="row" id="bannerRow">
+        <div class="banner col-sm-12 col-md-6">
+          <a href='http://localhost:1234/'>
+            <img src="image/img_block1.jpg" class="img-fluid" alt="Image of a person lifting weights.">
+            <div class="banner-text">
+              <h1>FIGHT LIKE A SPIDER</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+              <h3>READ MORE</h3>
+            </div>
+        </a>
+        </div>
+        <div class="banner col-sm-12 col-md-6">
+          <a href='http://localhost:1234/'>
+            <img src="image/img_block2.jpg" class="img-fluid" alt="Image of a person running.">
+            <div class="banner-text">
+              <h1>RUN LIKE A CHEETAH</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+              <h3>READ MORE</h3>
+            </div>
+          </a>
+        </div>
+      </div> 
+    </div> 
+
+    <!-- references of the pictures in the slideshow -->
+    <img src="./image/img_slide1.jpg" id="slideImg1" hidden="true">
+    <img src="./image/img_slide2.jpg" id="slideImg2" hidden="true">
+    <img src="./image/img_slide3.jpg" id="slideImg3" hidden="true">
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

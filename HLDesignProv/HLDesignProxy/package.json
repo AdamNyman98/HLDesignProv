@@ -1,0 +1,15 @@
+{
+  "name": "hldesignproxy",
+  "version": "1.0.0",
+  "description": "Proxy for fetching from the API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  }
+}
